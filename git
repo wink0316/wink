@@ -1,0 +1,11 @@
+拉分支：git checkout -b 分支名
+第一次提交分之：git push -u origin 分支名
+查看tag：git tag
+含附注的标签：git tag -a v1.4 -m 'my version 1.4'
+查看相应标签的版本信息：git show v1.4
+分享标签：git push origin [tagname]
+删除本地分之：git branch -d 分支名
+删除远程分之：git push origin --delete 分支名
+git远程删除分支但本地git branch -a仍能看到：git remote prune origin
+版本回退：git reset --hard [commitId]  
+  https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013744142037508cf42e51debf49668810645e02887691000
