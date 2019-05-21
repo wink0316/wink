@@ -11,3 +11,14 @@ git远程删除分支但本地git branch -a仍能看到：git remote prune origi
   https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013744142037508cf42e51debf49668810645e02887691000
 
 查看分之详细信息：gitk --all
+
+回退未使用 git add 缓存代码时。
+可以使用 git checkout -- filepathname (比如： git checkout -- readme.md  ，不要忘记中间的 “--” ，不写就成了检出分支了！！)。
+放弃所有的文件修改可以使用 git checkout .  命令。
+
+回退已经使用了  git add 缓存了代码。
+可以使用  git reset HEAD filepathname （比如： git reset HEAD readme.md）来放弃指定文件的缓存，放弃所以的缓存可以使用 git reset HEAD . 命令。
+
+回退已经用 git commit  提交了代码。
+可以使用 git reset --hard HEAD^ 来回退到上一次commit的状态。此命令可以用来回退到任意版本：git reset --hard  commitid 
+可以使用 git log 命令来查看git的提交历史。
