@@ -24,5 +24,5 @@ git远程删除分支但本地git branch -a仍能看到：git remote prune origi
 可以使用 git log 命令来查看git的提交历史。
 
 
-本地reset --hard之后提示落后远程，这时如果想强制提交覆盖那些落后的commit（注意使用，不可逆）：
+本地reset --hard之后提示落后远程分支，这时如果想强制提交以覆盖(丢弃)那些远程的commit（注意使用，不可逆）：
 $ git push -f origin 本地分之
