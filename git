@@ -1,3 +1,11 @@
+初始化：git init
+新建远程仓库并获取地址：git@github.com:wink0316/doom.git
+本地指定远程仓库地址：git remote add origin git@github.com:wink0316/doom.git
+常规add commit.......
+初始化提交：git push -u origin master(分支名)
+
+
+
 拉分支：git checkout -b 分支名
 第一次提交分之：git push -u origin 分支名
 查看tag：git tag
